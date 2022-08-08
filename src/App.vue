@@ -1,24 +1,15 @@
 <template>
-  <TodoIndex></TodoIndex>
-  <CounterIndex></CounterIndex>
-  <hr/>
-  <MyHello></MyHello>
-  <SayHello userName="Queen" @onName="showName"></SayHello>
+  <TodoContainer></TodoContainer>
 </template>
 
 <script>
-import MyHello from "@/components/MyHello";
-import SayHello from "@/components/SayHello";
-import CounterIndex from "@/components/count/CounterIndex";
-import TodoIndex from "@/components/todo/TodoIndex";
+
+import TodoContainer from "@/components/todo/TodoContainer";
 
 export default {
   name: 'App',
   components: {
-    TodoIndex,
-    CounterIndex,
-    SayHello,
-    MyHello
+    TodoContainer
   },
   methods: {
     showName: (value) => {

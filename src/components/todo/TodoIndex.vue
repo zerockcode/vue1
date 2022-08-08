@@ -16,8 +16,8 @@ const changeMid = () => {
   userInfo.value.mid += 1
 }
 
-watch(userInfo.value, (newValue, oldValue) => {
-  console.log("changed...", newValue, oldValue)
+watch(userInfo.value, () => {
+  console.log("changed...")
 })
 
 
