@@ -1,15 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <CounterIndex></CounterIndex>
+  <hr/>
+  <MyHello></MyHello>
+  <SayHello userName="Queen" @onName="showName"></SayHello>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyHello from "@/components/MyHello";
+import SayHello from "@/components/SayHello";
+import CounterIndex from "@/components/count/CounterIndex";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CounterIndex,
+    SayHello,
+    MyHello
+  },
+  methods: {
+    showName: (value) => {
+      alert("AAAA" + value)
+    }
   }
 }
 </script>
