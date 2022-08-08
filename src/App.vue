@@ -1,4 +1,5 @@
 <template>
+  <TodoIndex></TodoIndex>
   <CounterIndex></CounterIndex>
   <hr/>
   <MyHello></MyHello>
@@ -9,10 +10,12 @@
 import MyHello from "@/components/MyHello";
 import SayHello from "@/components/SayHello";
 import CounterIndex from "@/components/count/CounterIndex";
+import TodoIndex from "@/components/todo/TodoIndex";
 
 export default {
   name: 'App',
   components: {
+    TodoIndex,
     CounterIndex,
     SayHello,
     MyHello
